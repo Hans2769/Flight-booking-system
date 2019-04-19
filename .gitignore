@@ -1,32 +1,24 @@
-# Prerequisites
-*.d
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string name;
+    int flight ;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+cout << "Welcome to COS1511 flight booking system" << endl;
+cout << "Enter Your full name please: " << endl;
+cin >> name;
+cout << "The available travel times for flights are:"<< endl;
+cout << "    Depart             Arrive" << endl;
+cout << "1.   7.00              9.30  " << endl;
+cout << "2.   9.00              11.30 " << endl;
+cout << "3.   11.00             13.30" << endl;
+cout << "4.   13.00             15.30" << endl;
+cout << "5.   15.00             17.30" << endl;
+cout << " Choose the time by entering the option number on the displayed list" << endl;
+cin >> flight ;
+if(flight >= 1 & flight <=5)
+cout << "options are" << endl;
+else <<"Incorrect option! Please choose from 1-5."<<endl ;
